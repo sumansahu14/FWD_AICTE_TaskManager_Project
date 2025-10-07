@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to the top of the viewport */
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Limit the container width */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+/* Input Section Styling */
+.input-section {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+#task-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#add-task-btn {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#add-task-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Progress Bar Styling */
+.progress-tracker {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.progress-bar-container {
+    height: 20px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #28a745;
+    transition: width 0.5s ease-in-out;
+}
+
+#progress-text {
+    text-align: right;
+    margin-top: 5px;
+    color: #6c757d;
+    font-size: 14px;
+}
+
+/* Task List Styling */
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+#task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 8px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#task-list li.completed {
+    text-decoration: line-through;
+    color: #888;
+    background-color: #e9ffed; /* Light green background for completed tasks */
+}
+
+.task-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 18px;
+    transition: color 0.2s;
+}
+
+.complete-btn {
+    color: #28a745; /* Green checkmark */
+}
+
+.delete-btn {
+    color: #dc3545; /* Red trash icon */
+}
